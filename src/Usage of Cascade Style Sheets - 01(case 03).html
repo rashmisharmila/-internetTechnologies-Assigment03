@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usage of Cascade Style Sheets - 01(Case03)</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            width: 100vw;
+            height: 100vw;
+            margin-top: 500px;
+        }
+        p {
+            color: white;
+            margin: auto;
+
+        }
+
+        main > section > div > div > p {
+            color: black;
+            font-size: 100px;
+            margin-top: 100px;
+        }
+
+        .grayColourCircle {
+            width: 200px;
+            height: 200px;
+            border: 9px solid gray;
+            position: fixed;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 100%;
+        }
+
+        .redColourCircle {
+            width: 190px;
+            height: 190px;
+            border: 6px solid red;
+            position: fixed;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 100%;
+        }
+
+        .firstCenterCircle {
+            width: 190px;
+            height: 190px;
+            background: purple;
+            position: sticky;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 100%;
+        }
+
+        .secCenterCircle {
+            width: 190px;
+            height: 190px;
+            background: royalblue;
+            position: sticky;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 100%;
+        }
+
+        .thirdCenterCircle {
+            width: 190px;
+            height: 190px;
+            background: indianred;
+            position: sticky;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 100%;
+        }
+
+        h1 {
+            position: sticky;
+            color: white;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            justify-items: center;
+            text-align: center;
+            margin-top: 0px;
+            border-top-width: 50px;
+            padding-top: 50px
+        }
+
+
+    </style>
+</head>
+<body>
+
+<main>
+    <section class="firstCenterCircle">
+        <h1>Hello</h1>
+    </section>
+</main>
+<main>
+    <section class="secCenterCircle">
+        <h1>Welcome to</h1>
+    </section>
+</main>
+<main>
+    <section class="thirdCenterCircle">
+        <h1>Institute<br>of<br>Software<br>Engineer</h1>
+    </section>
+</main>
+
+<div class="grayColourCircle">
+    <div class="redColourCircle"></div>
+</div>
+</body>
+</html>

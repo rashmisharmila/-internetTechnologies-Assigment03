@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usage of Cascade Style Sheets - 01(case 05)</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .gridlayout {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            border: 1px solid gray;
+        }
+        div:nth-child(1) {
+            background: red;
+        }
+
+        div:nth-child(2) {
+            background: green;
+        }
+
+        div:nth-child(3) {
+            background: orange;
+        }
+        div:nth-child(4) {
+            background: purple;
+        }
+        div:nth-child(5) {
+            background: deeppink;
+        }
+
+        div:nth-child(6) {
+            background: blue;
+        }
+
+        div:nth-child(7) {
+            background: brown;
+        }
+        div:nth-child(8) {
+            background: hotpink;
+        }
+        div:nth-child(9) {
+            background: purple;
+        }
+
+        div:nth-child(10) {
+            background: yellow;
+        }
+
+        div:nth-child(11) {
+            background: cornflowerblue;
+        }
+        div:nth-child(12) {
+            background: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section class="gridlayout">
+        <!--1st Row-->
+        <div></div> <div></div> <div></div> <div></div>
+        <!--2nd Row-->
+        <div></div> <div></div> <div></div> <div></div>
+        <!--3rd Row-->
+        <div></div> <div></div> <div></div> <div></div>
+    </section>
+</main>
+</body>
+</html>
